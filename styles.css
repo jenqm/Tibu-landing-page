@@ -5,6 +5,10 @@
     /* border: 2px solid black; */
   }
 
+html {
+    scroll-padding-top: 200px; 
+}
+
 body {
     background-color: #eee;
     padding-top: 110px;
