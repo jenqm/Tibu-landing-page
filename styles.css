@@ -25,14 +25,20 @@ a {
     text-decoration: none;
 }
 
-h1, h2, a {
+h1, h2, a, h3 {
     text-align: center;
     padding-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5rem;
+}
+
+h3, #form-title {
+    font-size: 1.5rem;
+    color: #FFFF;
+    text-shadow: 1px 0px 1px #FF5449, 0px 1px 1px #FF847C, 2px 1px 1px #FF5449, 1px 2px 1px #FF847C, 3px 2px 1px #FF5449, 2px 3px 1px #FF847C;
 }
 
 .nav-container {
@@ -65,7 +71,7 @@ h2 {
 }
 
 #banner {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
@@ -76,30 +82,52 @@ h2 {
 }
 
 #banner img{
-    width: 50%;
+    width: 45%;
 }
 
-#banner h1 {
-    font-family: Nunito;
-    font-size: 3em;
-    margin-bottom: 10px;
+.slogan {
+    font-size: 3.5rem;
     word-spacing: 10px;
-    letter-spacing: 5px;
+    font-weight: lighter; 
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+    
+}
+.adj {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    line-height: 70px;
+    font-weight: 900;
+    letter-spacing: -0.45px;
+    display: inline;
+    color: #FFFF;
+    text-shadow: 1px 0px 1px #FF5449, 0px 1px 1px #FF847C, 2px 1px 1px #FF5449, 1px 2px 1px #FF847C, 3px 2px 1px #FF5449, 2px 3px 1px #FF847C, 4px 3px 1px #FF5449, 3px 4px 1px #FF847C, 5px 4px 1px #FF5449;
 }
 
+#banner-title{
+    padding: 2rem;
+}
 #features {
     display: grid;
-    padding: 25px;
+    padding: 40px 25px;
     align-content: center;
     justify-items: center;
     gap: 15%;
-    margin: 45PX;
+    margin: 50px 45px;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 
-.feature-item {
+.feature-item, #where-to-buy ul {
     text-align: center;
     line-height: 1.5;
+    background-color: #ffb4af;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -117,18 +145,16 @@ h2 {
     margin: 8px 0;
 }
 
+
 #where-to-buy, #pricing {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     align-items: center;
     text-align: center;
-
+    
 }
 
-#where-to-buy p {
-    padding: 5px 100px;
-}
 
 #submit, .btn {
     background-color: #ff5449;
@@ -138,6 +164,10 @@ h2 {
     margin: 10px 0;
     text-align: center;
     box-shadow: 2px 2px 2px #ffb4af;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 #video {
@@ -163,9 +193,12 @@ h2 {
     align-items: center;
     text-align: center;
     margin: 10px;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
     background-color: #ffb4af;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -228,4 +261,3 @@ footer {
       scroll-behavior: smooth;
     }
   }
-
