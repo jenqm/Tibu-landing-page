@@ -80,8 +80,7 @@ h2 {
 }
 
 #banner h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-style: italic;
+    font-family: "Nunito",sans-serif;
     font-size: 3em;
     margin-bottom: 10px;
     word-spacing: 10px;
