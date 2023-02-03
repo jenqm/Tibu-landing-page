@@ -155,6 +155,10 @@ h3, #form-title {
     
 }
 
+#where-to-buy li {
+    text-align: start;
+}    
+
 
 #submit, .btn {
     background-color: #ff5449;
